@@ -24,9 +24,9 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^exe/}) { |f| File.basename(f) }
   gem.require_paths = ['lib']
 
-  gem.add_development_dependency 'bundler', '~> 1.14'
-  gem.add_development_dependency 'rake', '~> 10.0'
+  gem.add_development_dependency 'bundler', '~> 2.0'
+  gem.add_development_dependency 'rake', '~> 13.0'
   gem.add_development_dependency 'rspec', '~> 3.0'
-  gem.add_dependency 'administrate', '~> 0.7'
-  gem.add_dependency 'rails', '~> 5'
+  gem.add_dependency 'administrate', '~> 0.14'
+  gem.add_dependency 'rails', '>= 6.0', '< 8.0'
 end
